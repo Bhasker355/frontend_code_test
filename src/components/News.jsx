@@ -10,12 +10,12 @@ const News = () => {
         {articlesData.map((data, i) => (
           <div key={i}>
             <div className="card-container">
-              <div style={{ width: "60%" }}>
-                <h4 style={{ color: "#0059bf" }}>
+              <div className="card-container-div">
+                <h4 className="card-container-h4">
                   {data.primarySectionRouteName}
                 </h4>
-                <h1 style={{ color: "#000000" }}>{data.headline}</h1>
-                <h3 style={{ color: "#606669" }}>{data.standfirst}</h3>
+                <h1 className="card-container-h1">{data.headline}</h1>
+                <h3 className="card-container-h3">{data.standfirst}</h3>
               </div>
               <div>
                 <img className="card-img" src={data.thumbnail.src} />
